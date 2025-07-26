@@ -1,0 +1,134 @@
+.cardWrapper {
+  max-width: 297px;
+  background: #210A01;
+  border-radius: 30px;
+  position: relative;
+  padding: 120px 41px 23px 27px;
+  line-height: 20px;
+}
+
+.circleButton {
+  border-radius: 50%;
+  border: 1px solid #A3A3A3;
+  color: #A3A3A3;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.active {
+  background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%) !important;
+  color: #fff;
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+}
+
+.ingridients {
+  border: 1px solid #fe9c1c;
+  width: 100%;
+  color: #fe9c1c;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.image {
+  position: absolute;
+  top: -70px;
+  left: 25%;
+}
+
+.title {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+}
+
+.descriptionPizza {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #A3A3A3;
+  display: flex;
+  justify-content: center;
+}
+
+.marginBottom20 {
+  margin-bottom: 20px;
+}
+
+.addPizzaContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.price {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.addPizza {
+  display: flex;
+  align-items: center;
+}
+
+.radiusPizzaContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.decrement, .increment {
+  width: 23px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 0;
+}
+
+.decrement {
+  border: 1px solid #A3A3A3;
+
+}
+
+.increment {
+  color: #fff;
+  background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
+}
+
+.count {
+  padding: 0 13px;
+  color: #A3A3A3;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.orderButton {
+  box-shadow: 0 7.59px 33.75px 0 #FF6B000F;
+  background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%);
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Nunito Sans", sans-serif;
+}

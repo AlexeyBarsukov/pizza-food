@@ -1,0 +1,37 @@
+.orangeButton {
+  background: linear-gradient(261.69deg, #ff5d29 12.12%, #fe9c1c 86.72%);
+  border-radius: 100px;
+  border: none;
+  padding: 11px 24px;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
+  flex-shrink: 0;
+  min-width: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-size: 17.74px;
+  color: white;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.buttonsGroup {
+  border: 2px solid #ff8548;
+  border-radius: 100px !important;
+  max-width: 275px;
+}

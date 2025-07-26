@@ -1,0 +1,92 @@
+@use '../styles/mixins' as *;
+
+.headerMenu {
+  display: flex;
+  @include for-tablet {
+    display: none;
+  }
+}
+
+.containerHeader {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+
+  @include for-tablet {
+    margin-top: 0;
+  }
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  color: #a3a3a3;
+  font-weight: 400;
+  font-family: 'Nunito Sans', sans-serif;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  align-items: center;
+  cursor: pointer;
+  flex-grow: 0 !important;
+
+  :hover {
+    background: linear-gradient(261.69deg, #ff6432 12.12%, #ffa228 86.72%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 0.4s;
+  }
+
+  li {
+    position: relative;
+    padding: 8px 16px;
+
+    &.active {
+      background: linear-gradient(261.69deg, #ff6432 12.12%, #ffa228 86.72%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: linear-gradient(261.69deg, #ff6432 12.12%, #ffa228 86.72%);
+      }
+    }
+  }
+}
+
+.wrapperMenu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttonLogin {
+  min-width: 163px !important;
+}
+
+.mobileMenu {
+  display: block;
+}
+
+.appbar {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.toolbar {
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}

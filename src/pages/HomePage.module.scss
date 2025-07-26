@@ -1,0 +1,114 @@
+@use '../styles/mixins' as *;
+
+.containerHomePage {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 110px;
+  @include for-tablet {
+    flex-direction: column-reverse;
+  }
+}
+
+.wrapperInfo {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 119px;
+  position: relative;
+
+  @include for-tablet {
+    margin-top: 20px;
+  }
+
+  &::before {
+    content: ' ';
+    background-image: url('../assets/pizza-sign.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -74px;
+    left: 59px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+
+    @include for-tablet {
+      display: none;
+    }
+  }
+}
+
+.wrapperSecond {
+  position: relative;
+
+  &::before {
+    content: ' ';
+    background-image: url('../assets/pizza-sign.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -74px;
+    left: 230px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+
+    @include for-tablet {
+      display: none;
+    }
+  }
+}
+
+.title {
+  color: #fff;
+  font-weight: 800;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 69px;
+  white-space: nowrap;
+  margin-bottom: 30px;
+
+  @include for-tablet {
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+}
+
+.description,
+.cooking {
+  font-weight: 400;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  color: #a3a3a3;
+}
+
+.description {
+  margin-bottom: 23px !important;
+
+  @include for-tablet {
+    font-size: 14px;
+  }
+}
+
+.white {
+  color: #fff;
+}
+
+.cooking {
+}
+
+.activeButtonGroup {
+  margin-top: 58px;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 17px;
+  right: 183px;
+
+  @include for-tablet {
+    display: none;
+  }
+}

@@ -1,0 +1,17 @@
+.button {
+  background: #210A01;
+  color: #fff;
+  box-shadow: 0 9px 40px 0 #FF6B000F;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  border-radius: 100px;
+
+  &:hover {
+    border-color: #fe9c1c !important;
+  }
+}
+
+.button:active:not(:disabled) {
+  background: linear-gradient(261.69deg, #FF5924 12.12%, #FFA229 86.72%) !important;
+}

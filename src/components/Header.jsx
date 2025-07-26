@@ -1,3 +1,10 @@
+import ResponsiveMenu from './Menu.jsx'
+import styles from './Header.module.scss'
+
 export function Header() {
-  return <h1>Header тестирование</h1>
+  return (
+    <div className={styles.containerHeader}>
+      <ResponsiveMenu />
+    </div>
+  )
 }
